@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+<!-- 		已經改成讀beans.config.xml，可以註解 -->
+<!-- 	<context:annotation-config /> -->
+<!-- 	<context:component-scan base-package="tw.group4" /> -->
+<!-- 	<mvc:annotation-driven /> -->
+<!-- 	<tx:annotation-driven/> -->
+
+	<!-- 註冊控制器，name就是網址 -->
+<!-- 	<bean id="helloController" name="/hello.controller" -->
+<!-- 		class="tw.group4.controller.HelloController" /> -->
+
+	<!-- 	註冊viewResolver，目前已用java註冊 -->
+<!-- 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> -->
+<!-- 		<property name="prefix" value="/WEB-INF/pages/"/> -->
+<!-- 		<property name="suffix" value=".jsp"/> -->
+<!-- 	</bean> -->
+
+<!-- 		因為以java config為主，mvc-servlet檔的設定都失效，故註解 -->
+<!-- 		以下實際設定在java config -->
+<!-- 	<bean id="multipartResolver" -->
+<!-- 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> -->
+<!-- 		<property name="defaultEncoding" value="UTF-8" /> -->
+<!-- 	</bean> -->
+
+<!-- 		因為以java config為主，mvc-servlet檔的設定都失效了，故註解 -->
+<!-- 		以下實際設定在beans.config.xml -->
+<!-- 	<bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"> -->
+<!-- 		<property name="prettyPrint" value="true" /> -->
+<!-- 	</bean> -->
+	
+<!--     <bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"> -->
+<!--        <property name="classesToBeBound"> -->
+<!--           <list> -->
+<!--              <value>tw.group4.model.HouseBean</value> -->
+<!--           </list> -->
+<!--        </property> -->
+<!--     </bean> -->
+    
+<!--     <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"> -->
+<!--     	<property name="defaultViews"> -->
+<!--     		<list> -->
+<!--     			<ref bean="jsonView"/> -->
+<!--     		</list> -->
+<!--     	</property> -->
+<!--     </bean> -->
+
+</beans>

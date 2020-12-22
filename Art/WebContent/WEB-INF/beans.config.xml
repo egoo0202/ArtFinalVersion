@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+	
+	<!-- 下面這句宣告general annotations -->
+	<!-- <context:annotation-config /> -->
+	<!-- java設定檔的@ComponentScan(basePackages = "tw.group4" )等同下方，宣告Spring MVC相關annotations -->
+	<!-- <context:component-scan base-package="tw.group4" /> -->
+	<!-- java設定檔的@EnableWebMvc等同下方 -->
+	<!-- <mvc:annotation-driven /> -->
+	<!-- 宣告transaction相關annotation -->
+
+	<!-- 以下關於transaction和hibernate在RootConfig被取代 -->
+	<!-- <tx:annotation-driven -->
+	<!-- transaction-manager="transactionManager" /> -->
+
+	<!-- <bean id="transactionManager" -->
+	<!-- class="org.springframework.orm.hibernate5.HibernateTransactionManager"> -->
+	<!-- <property name="sessionFactory" ref="sessionFactory" /> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="oracledatasource" -->
+	<!-- class="org.springframework.jndi.JndiObjectFactoryBean"> -->
+	<!-- <property name="jndiName" value="java:comp/env/jdbc/xe"></property> -->
+	<!-- </bean> -->
+
+	<!-- <bean id="sessionFactory" destroy-method="destroy" -->
+	<!-- class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"> -->
+	<!-- <property name="dataSource" ref="oracledatasource" /> -->
+	<!-- <property name="packagesToScan" value="tw.group4" /> -->
+	<!-- <property name="hibernateProperties"> -->
+	<!-- <props> -->
+	<!-- <prop key="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</prop> -->
+	<!-- <prop key="hibernate.current_session_context_class">thread</prop> -->
+	<!-- <prop key="hibernate.show_sql">true</prop> -->
+	<!-- <prop key="hibernate.format_sql">true</prop> -->
+	<!-- </props> -->
+	<!-- </property> -->
+	<!-- 下面這個mappingResources用annotation mapping，因為java config很難寫沒用註解annotation 
+		mapping的 -->
+	<!-- <property name="mappingResources"> -->
+	<!-- <list> -->
+	<!-- <value>tw/group4/model/HouseBean.hbm.xml</value> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- 需要src/hibernate.cfg.xml的舊方法 -->
+	<!-- <bean id="sessionFactory" destroy-method="destroy" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"> -->
+	<!-- <property name="dataSource" ref="oracledatasource"/> -->
+	<!-- <property name="configLocation"> -->
+	<!-- <value>classpath:hibernate.cfg.xml</value> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- 設定靜態資源路徑，也可用java設定取代，詳見images設定 -->
+	<!-- <mvc:resources location="/WEB-INF/pages/images/" mapping="/images/**"/> -->
+	<!-- <mvc:resources location="/WEB-INF/pages/backstyle/css/" -->
+	<!-- mapping="/css/**" /> -->
+	<!-- <mvc:resources location="/WEB-INF/pages/backstyle/vendor/" -->
+	<!-- mapping="/vendor/**" /> -->
+	<!-- <mvc:resources location="/WEB-INF/pages/backstyle/js/" -->
+	<!-- mapping="/js/**" /> -->
+
+	<!-- 設定網址路徑的特定映射位置，目前未設定，有需求可在Java Config設定 -->
+	<!-- <mvc:view-controller path="/myformPage" -->
+	<!-- view-name="redirect:myformPage.controller" /> -->
+
+	<!-- 已經用java設定取代 -->
+	<!-- <bean id="multipartResolver" -->
+	<!-- class="org.springframework.web.multipart.commons.CommonsMultipartResolver"> -->
+	<!-- <property name="defaultEncoding" value="UTF-8" /> -->
+	<!-- </bean> -->
+
+	<!-- JSON View -->
+	<!-- 在Java Config -->
+	<!-- <bean id="jsonView" -->
+	<!-- class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"> -->
+	<!-- <property name="prettyPrint" value="true" /> -->
+	<!-- </bean> -->
+
+	<!-- JAXB XML View -->
+	<!-- <bean id="jaxbMarshaller" -->
+	<!-- class="org.springframework.oxm.jaxb.Jaxb2Marshaller"> -->
+	<!-- <property name="classesToBeBound"> -->
+	<!-- <list> -->
+	<!-- <value>tw.group4.model.HouseBean</value> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+	<!-- ContentNegotiatingViewResolver 可以一個@RequestMapping，返回多種view -->
+	<!-- <bean -->
+	<!-- class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver"> -->
+	<!-- <property name="defaultViews"> -->
+	<!-- <list> -->
+	<!-- <ref bean="jsonView" /> -->
+	<!-- </list> -->
+	<!-- </property> -->
+	<!-- </bean> -->
+
+</beans>

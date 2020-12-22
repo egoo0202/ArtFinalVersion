@@ -1,0 +1,48 @@
+[INFO ] [2020/11/30 16:04:48:237 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 16:04:48:710 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 16:04:48:826 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 16:04:48:827 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 16:04:48:827 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 16:04:48:828 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 16:04:48:830 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 16:04:48:945 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO ] [2020/11/30 16:05:50:126 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 16:05:50:582 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 16:05:50:706 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 16:05:50:706 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 16:05:50:707 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 16:05:50:707 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 16:05:50:710 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 16:05:50:822 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO ] [2020/11/30 19:02:41:307 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 19:02:41:767 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 19:02:41:898 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 19:02:41:899 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 19:02:41:899 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 19:02:41:900 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 19:02:41:902 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 19:02:42:045 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO ] [2020/11/30 20:12:39:607 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 20:12:40:144 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 20:12:40:277 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 20:12:40:278 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 20:12:40:278 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 20:12:40:278 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 20:12:40:281 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 20:12:40:415 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO ] [2020/11/30 21:44:55:268 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 21:44:55:751 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 21:44:55:883 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 21:44:55:884 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 21:44:55:885 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 21:44:55:885 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 21:44:55:889 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 21:44:56:034 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+[INFO ] [2020/11/30 21:46:31:176 org.hibernate.Version-logVersion] : HHH000412: Hibernate ORM core version 5.4.22.Final
+[INFO ] [2020/11/30 21:46:31:521 org.hibernate.annotations.common.reflection.java.JavaReflectionManager-<clinit>] : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+[WARN ] [2020/11/30 21:46:31:609 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-configure] : HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[INFO ] [2020/11/30 21:46:31:610 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001005: using driver [oracle.jdbc.driver.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521/XEPDB1]
+[INFO ] [2020/11/30 21:46:31:610 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001001: Connection properties: {password=****, user=group4}
+[INFO ] [2020/11/30 21:46:31:610 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl-buildCreator] : HHH10001003: Autocommit mode: false
+[INFO ] [2020/11/30 21:46:31:613 org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections-<init>] : HHH000115: Hibernate connection pool size: 20 (min=1)
+[INFO ] [2020/11/30 21:46:31:749 org.hibernate.dialect.Dialect-<init>] : HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect

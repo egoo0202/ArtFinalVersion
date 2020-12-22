@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context displayName="Art Web Application" docBase="Art"
+	path="/Art" reloadable="true">
+
+	<Resource name="jdbc/xe" type="javax.sql.DataSource"
+	username="group4" password="oracle"
+	driverClassName="oracle.jdbc.OracleDriver"
+	url="jdbc:oracle:thin:@localhost:1521/XEPDB1"
+	maxTotal="20"
+	maxIdle="10"
+	maxWaitMillis="-1"/>
+
+</Context>

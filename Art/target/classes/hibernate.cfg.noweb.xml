@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		
+		<!-- 已經在web.xml和context.xml設定，故可註解以下 -->
+		<!-- 但因為java檔要執行塞資料，所以取消註解 -->
+		<property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+		<property name="hibernate.connection.password">oracle</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521/XEPDB1</property>
+		<property name="hibernate.connection.username">group4</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle12cDialect</property>
+		
+		<!-- 關於Datasource -->
+		<!-- <property name="hibernate.connection.datasource">java:comp/env/jdbc/xe</property> -->
+		<!-- 關於Session -->
+		<property name="hibernate.current_session_context_class">thread</property>
+
+		<!-- 關於顯示hibernateSQL語句 -->
+		<!-- <property name="hibernate.show_sql">true</property> -->
+		<!-- <property name="hibernate.format_sql">true</property> -->
+
+		<!-- 關於自動生成表格 -->
+		<!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+
+		<!-- 關於批次讀寫數量設定 -->
+		<property name="hibernate.jdbc.fetch_size">30</property>
+		<property name="hibernate.jdbc.batch_size">50</property>
+
+		<!-- 設定mapping class -->
+		<mapping class="tw.group4._35_.geo.model.Activity" />
+		<mapping class="tw.group4._35_.geo.model.Position" />
+		<mapping class="tw.group4._35_.cms.model.EventSpace" />
+		<mapping class="tw.group4._35_.login.model.WebsiteMember" />
+
+	</session-factory>
+</hibernate-configuration>
